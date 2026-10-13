@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-doodle: 'Caveat', cursive;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #FAF7F2;
+    color: #201D1A;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-doodle {
+    font-family: var(--font-doodle);
+  }
+}
+
+/* Float Animations for Stickers and Badges */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(7px) rotate(-2deg);
+  }
+}
+
+@keyframes wiggle-subtle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes wave-bars {
+  0%, 100% {
+    height: 4px;
+  }
+  50% {
+    height: 18px;
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 5s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle-subtle 2.5s ease-in-out infinite;
+}
+
+/* WhatsApp Pulse */
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 16px 32px -5px rgba(37, 211, 102, 0.5), 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+}
+
+.animate-whatsapp-pulse {
+  animation: pulse-subtle 2.5s infinite ease-in-out;
+}
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Audio Wave Visualizer */
+.audio-bar-1 { animation: wave-bars 0.8s ease-in-out infinite 0.1s; }
+.audio-bar-2 { animation: wave-bars 0.8s ease-in-out infinite 0.3s; }
+.audio-bar-3 { animation: wave-bars 0.8s ease-in-out infinite 0.5s; }
+.audio-bar-4 { animation: wave-bars 0.8s ease-in-out infinite 0.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-whatsapp-pulse,
+  .animate-marquee,
+  .animate-float-slow,
+  .animate-float-reverse,
+  .animate-wiggle,
+  .audio-bar-1,
+  .audio-bar-2,
+  .audio-bar-3,
+  .audio-bar-4 {
+    animation: none !important;
+  }
+}
