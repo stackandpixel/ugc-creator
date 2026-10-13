@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ananya Deshmukh | UGC Creator Portfolio</title>
+  <meta name="description" content="Portfolio of Ananya Deshmukh, Mumbai-based UGC creator specializing in beauty, skincare, lifestyle, food, and fashion reels that convert." />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ananya Deshmukh | UGC Creator Portfolio" />
+  <meta property="og:description" content="Real people. Real reviews. Reels that convert. UGC creator based in Mumbai, India." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Outfit (Display), Plus Jakarta Sans (Body), Caveat (Doodle) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            doodle: ['Caveat', 'cursive']
+          },
+          colors: {
+            warmCanvas: '#FAF7F2',
+            surfaceSand: '#F5EFE6',
+            terracotta: '#E56A44',
+            sienna: '#C84E29',
+            blush: '#FCEEE9',
+            darkCharcoal: '#201D1A',
+            mutedBrown: '#686058',
+            whatsappGreen: '#25D366'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FAF7F2;
+      color: #201D1A;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, .font-display {
+      font-family: 'Outfit', sans-serif;
+    }
+    .font-doodle {
+      font-family: 'Caveat', cursive;
+    }
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(2deg); }
+    }
+    @keyframes float-reverse {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(7px) rotate(-2deg); }
+    }
+    .animate-float-slow { animation: float-slow 4s ease-in-out infinite; }
+    .animate-float-reverse { animation: float-reverse 5s ease-in-out infinite; }
+
+    @keyframes pulse-subtle {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.4);
+      }
+      50% {
+        transform: scale(1.06);
+        box-shadow: 0 16px 32px -5px rgba(37, 211, 102, 0.5), 0 0 0 14px rgba(37, 211, 102, 0);
+      }
+    }
+    .animate-whatsapp-pulse { animation: pulse-subtle 2.5s infinite ease-in-out; }
+
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 28s linear infinite;
+    }
+    .animate-marquee:hover { animation-play-state: paused; }
+
+    @keyframes wave-bars {
+      0%, 100% { height: 4px; }
+      50% { height: 16px; }
+    }
+    .audio-bar-1 { animation: wave-bars 0.8s ease-in-out infinite 0.1s; }
+    .audio-bar-2 { animation: wave-bars 0.8s ease-in-out infinite 0.3s; }
+    .audio-bar-3 { animation: wave-bars 0.8s ease-in-out infinite 0.5s; }
+    .audio-bar-4 { animation: wave-bars 0.8s ease-in-out infinite 0.2s; }
+  </style>
+</head>
+<body class="bg-warmCanvas text-darkCharcoal antialiased selection:bg-terracotta selection:text-white">
+
+  <script>
+    const CREATOR_CONFIG = {
+      name: "Ananya Deshmukh",
+      tagline: "Real people. Real reviews. Reels that convert.",
+      niche: "Beauty, skincare, lifestyle, food and fashion UGC",
+      city: "Mumbai, India",
+      instagramHandle: "@ananya.creates",
+      instagramUrl: "https://instagram.com/ananya.creates",
+      whatsappNumber: "+91 98XXXXXXXX",
+      whatsappDigits: "919800000000",
+      defaultMessage: "Hi Ananya, I found your portfolio and would like to discuss a UGC collaboration for our brand.",
+      email: "hello@ananyacreates.in"
+    };
+
+    function getWhatsAppUrl(msg) {
+      const text = encodeURIComponent(msg || CREATOR_CONFIG.defaultMessage);
+      return `https://wa.me/${CREATOR_CONFIG.whatsappDigits}?text=${text}`;
+    }
+  </script>
+
+  <!-- 1. STICKY TOP BAR -->
+  <header class="sticky top-0 z-40 bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#EAE3D9] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 py-4 flex items-center justify-between gap-6">
+      
+      <a href="#" class="font-display text-xl sm:text-2xl font-bold tracking-tight text-darkCharcoal hover:text-sienna transition-colors whitespace-nowrap shrink-0 flex items-center gap-2 group">
+        <span class="relative">
+          Ananya Deshmukh
+          <svg class="absolute -bottom-1 left-0 w-full h-1 text-terracotta opacity-80" viewBox="0 0 100 8" preserveAspectRatio="none">
+            <path d="M0,5 Q25,0 50,5 T100,5" fill="none" stroke="currentColor" stroke-width="2.5" />
+          </svg>
+        </span>
+        <span class="w-5 h-5 rounded-full bg-blush text-terracotta text-[10px] font-bold flex items-center justify-center">✨</span>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-6 text-sm font-medium text-mutedBrown">
+        <a href="#about" class="hover:text-darkCharcoal hover:underline underline-offset-4 decoration-terracotta/50">About</a>
+        <a href="#services" class="hover:text-darkCharcoal hover:underline underline-offset-4 decoration-terracotta/50">Services</a>
+        <a href="#work" class="hover:text-darkCharcoal hover:underline underline-offset-4 decoration-terracotta/50">Work</a>
+        <a href="#brands" class="hover:text-darkCharcoal hover:underline underline-offset-4 decoration-terracotta/50">Brands</a>
+        <a href="#collaborations" class="hover:text-darkCharcoal hover:underline underline-offset-4 decoration-terracotta/50">Collaborations</a>
+        <a href="#achievements" class="hover:text-darkCharcoal hover:underline underline-offset-4 decoration-terracotta/50">Achievements</a>
+        <a href="#packages" class="hover:text-darkCharcoal hover:underline underline-offset-4 decoration-terracotta/50">Packages</a>
+        <a href="#planner" class="hover:text-darkCharcoal hover:underline underline-offset-4 decoration-terracotta/50">Planner</a>
+        <a href="#process" class="hover:text-darkCharcoal hover:underline underline-offset-4 decoration-terracotta/50">Process</a>
+        <a href="#faq" class="hover:text-darkCharcoal hover:underline underline-offset-4 decoration-terracotta/50">FAQ</a>
+        <a href="#contact" class="hover:text-darkCharcoal hover:underline underline-offset-4 decoration-terracotta/50">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3 shrink-0">
+        <a id="headerWaBtn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-whatsappGreen text-white text-xs sm:text-sm font-bold shadow-sm hover:bg-[#20BA5A] hover:scale-105 transition-all">
+          <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+
+        <button id="mobileMenuBtn" class="xl:hidden p-2 rounded-lg text-darkCharcoal hover:bg-surfaceSand transition-colors" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div id="mobileDrawer" class="hidden xl:hidden bg-warmCanvas border-b border-[#EAE3D9] px-6 py-5 shadow-lg">
+      <nav class="flex flex-col gap-3">
+        <a href="#about" class="mobile-nav-link text-base font-medium text-mutedBrown hover:text-darkCharcoal py-1 border-b border-[#F0EBE2]">About</a>
+        <a href="#services" class="mobile-nav-link text-base font-medium text-mutedBrown hover:text-darkCharcoal py-1 border-b border-[#F0EBE2]">Services</a>
+        <a href="#work" class="mobile-nav-link text-base font-medium text-mutedBrown hover:text-darkCharcoal py-1 border-b border-[#F0EBE2]">Work</a>
+        <a href="#brands" class="mobile-nav-link text-base font-medium text-mutedBrown hover:text-darkCharcoal py-1 border-b border-[#F0EBE2]">Brands</a>
+        <a href="#collaborations" class="mobile-nav-link text-base font-medium text-mutedBrown hover:text-darkCharcoal py-1 border-b border-[#F0EBE2]">Collaborations</a>
+        <a href="#packages" class="mobile-nav-link text-base font-medium text-mutedBrown hover:text-darkCharcoal py-1 border-b border-[#F0EBE2]">Packages</a>
+        <a href="#planner" class="mobile-nav-link text-base font-medium text-mutedBrown hover:text-darkCharcoal py-1 border-b border-[#F0EBE2]">Planner</a>
+        <a href="#faq" class="mobile-nav-link text-base font-medium text-mutedBrown hover:text-darkCharcoal py-1 border-b border-[#F0EBE2]">FAQ</a>
+        <a href="#contact" class="mobile-nav-link text-base font-medium text-mutedBrown hover:text-darkCharcoal py-1">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section class="relative pt-8 pb-16 sm:pt-14 sm:pb-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <div class="lg:col-span-7 flex flex-col justify-center text-left">
+          
+          <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold tracking-wider text-sienna uppercase mb-3">
+            <span class="bg-blush px-2.5 py-1 rounded-full border border-[#F3D1C6]">📍 Mumbai, India</span>
+            <span>·</span>
+            <span>Beauty, Skincare & Lifestyle UGC</span>
+            <span>·</span>
+            <span class="text-[#059669] font-bold">Available Now</span>
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-darkCharcoal tracking-tight leading-[1.12] mb-4">
+            Real people. Real reviews. <span class="relative text-sienna">Reels that convert.<svg class="absolute -bottom-2 left-0 w-full h-3 text-terracotta" viewBox="0 0 200 12" fill="none"><path d="M2,9 Q50,2 100,9 T198,7" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span>
+          </h1>
+
+          <div class="font-doodle text-2xl sm:text-3xl text-sienna rotate-[-2deg] mb-4">
+            ✦ "No robotic scripts. Just authentic Indian consumer storytelling!"
+          </div>
+
+          <p class="text-lg sm:text-xl text-mutedBrown leading-relaxed mb-8 max-w-2xl">
+            High-converting, thumb-stopping UGC reels engineered for Indian D2C brands. Real skin textures, unscripted relatability, and ad-tested hooks that lower customer acquisition cost.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-9">
+            <a id="heroWaBtn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-whatsappGreen text-white font-bold text-base shadow-md hover:bg-[#20BA5A] hover:scale-105 transition-all">
+              <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
+              <span>Chat on WhatsApp</span>
+              <span class="text-xs bg-white/20 px-2 py-0.5 rounded-full font-mono">⚡ 2h reply</span>
+            </a>
+            
+            <a href="https://instagram.com/ananya.creates" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-full bg-white border border-[#D8CEBF] text-darkCharcoal font-semibold text-base hover:bg-surfaceSand hover:border-terracotta transition-all">
+              <span class="text-terracotta font-bold">IG</span>
+              <span>View my Instagram (@ananya.creates)</span>
+            </a>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-y-2 gap-x-3 text-xs sm:text-sm text-mutedBrown">
+            <span class="font-semibold text-darkCharcoal">✓ 40+ Indian D2C Brands</span>
+            <span>·</span>
+            <span class="font-semibold text-darkCharcoal">✓ Tailored Rate Cards (No Lock-in)</span>
+            <span>·</span>
+            <span>Fast 48h Turnaround</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center relative">
+          <div class="absolute -top-4 -left-6 z-20 bg-white border-2 border-terracotta text-sienna rounded-2xl px-3.5 py-1.5 font-doodle text-xl rotate-[-8deg] animate-float-slow select-none">
+            ✨ 100% Real Skin Texture!
+          </div>
+
+          <div class="relative w-full max-w-sm sm:max-w-md bg-darkCharcoal p-3.5 rounded-[44px] shadow-2xl border-4 border-[#38332E]">
+            <div class="w-32 h-4 bg-[#141210] rounded-full mx-auto mb-2"></div>
+
+            <div class="bg-warmCanvas rounded-[34px] overflow-hidden border border-[#EAE3D9] flex flex-col">
+              <div class="relative aspect-[9/11] bg-gradient-to-b from-[#FDF2E9] via-[#FADBD8] to-[#EDBB99] flex flex-col justify-between p-5 overflow-hidden">
+                <div class="flex items-center justify-between text-xs text-white z-10">
+                  <span class="bg-black/60 px-2.5 py-1 rounded-full font-bold">📍 Mumbai Studio</span>
+                  <span class="bg-black/60 px-2.5 py-1 rounded-full font-mono text-[11px]">4K 60FPS</span>
+                </div>
+
+                <div class="flex flex-col items-center justify-center my-auto text-center z-10">
+                  <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-terracotta to-[#F59E0B] p-1.5 shadow-xl mb-3">
+                    <div class="w-full h-full rounded-full bg-warmCanvas flex flex-col items-center justify-center text-darkCharcoal">
+                      <span class="font-display text-3xl font-extrabold text-sienna">AD</span>
+                      <span class="text-[9px] font-bold text-mutedBrown">UGC</span>
+                    </div>
+                  </div>
+                  <h3 class="font-display text-xl font-bold text-darkCharcoal">Ananya Deshmukh</h3>
+                  <p class="text-xs text-mutedBrown font-medium">Beauty & D2C UGC Strategist</p>
+                  <div class="mt-2.5 px-3 py-1 rounded-full bg-white text-[11px] font-bold text-sienna border border-[#EAE3D9]">
+                    Accepting New Campaigns
+                  </div>
+                </div>
+
+                <div class="bg-white/95 rounded-xl p-3 border border-[#EAE3D9] flex items-center justify-between text-xs z-10">
+                  <div>
+                    <p class="text-[10px] uppercase font-bold text-mutedBrown">Top Performing Reel</p>
+                    <p class="font-bold text-darkCharcoal">1.2M+ Views · 4.2x ROAS</p>
+                  </div>
+                  <a href="#work" class="font-bold text-sienna hover:underline">Watch →</a>
+                </div>
+              </div>
+
+              <div class="p-3 bg-white border-t border-[#EAE3D9] flex items-center justify-between text-xs text-mutedBrown">
+                <span class="font-bold text-darkCharcoal">@ananya.creates</span>
+                <span class="font-mono text-terracotta font-bold">85K Community</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-14 pt-10 border-t border-[#EAE3D9] grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+        <div class="flex flex-col">
+          <span class="text-[11px] font-bold text-terracotta mb-1">🔥 Active Community</span>
+          <span class="font-display text-4xl sm:text-5xl font-extrabold text-darkCharcoal tabular-nums">85K</span>
+          <span class="text-sm font-semibold text-darkCharcoal mt-1">Instagram Followers</span>
+          <span class="text-xs text-mutedBrown">Organic audience</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-[11px] font-bold text-terracotta mb-1">🎥 100% On-Time</span>
+          <span class="font-display text-4xl sm:text-5xl font-extrabold text-darkCharcoal tabular-nums">120+</span>
+          <span class="text-sm font-semibold text-darkCharcoal mt-1">Videos Delivered</span>
+          <span class="text-xs text-mutedBrown">Across 40+ campaigns</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-[11px] font-bold text-terracotta mb-1">🤝 Verified Partner</span>
+          <span class="font-display text-4xl sm:text-5xl font-extrabold text-darkCharcoal tabular-nums">40+</span>
+          <span class="text-sm font-semibold text-darkCharcoal mt-1">Brands Collaborated</span>
+          <span class="text-xs text-mutedBrown">D2C, Beauty & FMCG</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-[11px] font-bold text-terracotta mb-1">⚡ High Hook Retention</span>
+          <span class="font-display text-4xl sm:text-5xl font-extrabold text-darkCharcoal tabular-nums">4.8%</span>
+          <span class="text-sm font-semibold text-darkCharcoal mt-1">Avg. Reel Engagement</span>
+          <span class="text-xs text-mutedBrown">3.2x industry avg</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. ABOUT ME -->
+  <section id="about" class="py-16 sm:py-20 bg-surfaceSand/60 border-t border-b border-[#EAE3D9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-widest text-sienna">About Me</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-darkCharcoal mt-2 mb-6">
+          A creator who understands both aesthetics and ad metrics.
+        </h2>
+        <p class="text-base sm:text-lg text-mutedBrown leading-relaxed mb-6">
+          Hey there! I'm Ananya, a Mumbai-based UGC creator obsessed with making content that feels like a trusted recommendation from your closest friend. I bridge authentic Indian consumer relatability with performance marketing psychology: thumb-stopping 3-second hooks, raw texture close-ups, and genuine problem-solving narratives that turn passive scrollers into passionate buyers.
+        </p>
+        <p class="text-base text-mutedBrown leading-relaxed mb-8">
+          My audience trusts me because I don’t endorse anything I wouldn’t use on my own skin or recommend to my closest friends. For brands, that authenticity directly translates to lower CPMs, higher watch time, and measurable sales.
+        </p>
+
+        <div class="pt-6 border-t border-[#DED5C8]">
+          <p class="text-xs font-bold uppercase tracking-wider text-mutedBrown mb-3">Key Creator Advantages</p>
+          <div class="flex flex-wrap items-center gap-y-2 gap-x-3 text-xs sm:text-sm font-medium text-darkCharcoal">
+            <span>✓ Hindi + English Fluent</span>
+            <span class="text-[#B0A79C]">·</span>
+            <span>✓ Beginner-Friendly Brand Briefs</span>
+            <span class="text-[#B0A79C]">·</span>
+            <span>✓ Fast 48–72h Turnaround</span>
+            <span class="text-[#B0A79C]">·</span>
+            <span>✓ Scripting & Editing Included</span>
+            <span class="text-[#B0A79C]">·</span>
+            <span>✓ Real Skin & Honest Textures</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SERVICES -->
+  <section id="services" class="py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-sienna">Services Offered</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-darkCharcoal mt-2">
+            What I can create for your brand.
+          </h2>
+        </div>
+        <p class="text-sm text-mutedBrown mt-2 sm:mt-0 max-w-sm">
+          Customized for paid Meta ad accounts, TikTok, and organic social calendars.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-[#EAE3D9] flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div>
+            <div class="flex justify-between items-center mb-5">
+              <span class="w-12 h-12 rounded-2xl bg-blush text-sienna flex items-center justify-center text-xl">🎥</span>
+              <span class="text-xs font-bold text-sienna bg-warmCanvas px-2.5 py-1 rounded-full border border-[#EAE3D9]">⭐ Top Seller</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-darkCharcoal mb-2">Product Review Videos</h3>
+            <p class="text-sm text-mutedBrown leading-relaxed mb-4">Honest, conversion-driven breakdowns highlighting primary customer pain points and real benefits.</p>
+            <p class="text-xs text-[#8A8175] font-medium bg-warmCanvas p-2.5 rounded-xl border border-[#EAE3D9]">✓ Includes: 1-2 Hook Variations · Crisp Audio</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-surfaceSand">
+            <a href="#" onclick="openWhatsAppForService('Product Review Videos')" class="text-xs font-bold text-darkCharcoal hover:text-sienna">Inquire on WhatsApp →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-[#EAE3D9] flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div>
+            <div class="flex justify-between items-center mb-5">
+              <span class="w-12 h-12 rounded-2xl bg-blush text-sienna flex items-center justify-center text-xl">📦</span>
+              <span class="text-xs font-bold text-sienna bg-warmCanvas px-2.5 py-1 rounded-full border border-[#EAE3D9]">✨ Satisfying</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-darkCharcoal mb-2">Aesthetic Unboxing</h3>
+            <p class="text-sm text-mutedBrown leading-relaxed mb-4">Sensory reveals capturing first impressions, premium packaging textures, and unboxing excitement.</p>
+            <p class="text-xs text-[#8A8175] font-medium bg-warmCanvas p-2.5 rounded-xl border border-[#EAE3D9]">✓ Includes: Macro Packaging Shots · Clean B-roll</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-surfaceSand">
+            <a href="#" onclick="openWhatsAppForService('Aesthetic Unboxing')" class="text-xs font-bold text-darkCharcoal hover:text-sienna">Inquire on WhatsApp →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-[#EAE3D9] flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div>
+            <div class="flex justify-between items-center mb-5">
+              <span class="w-12 h-12 rounded-2xl bg-blush text-sienna flex items-center justify-center text-xl">✨</span>
+              <span class="text-xs font-bold text-sienna bg-warmCanvas px-2.5 py-1 rounded-full border border-[#EAE3D9]">💄 Lifestyle</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-darkCharcoal mb-2">GRWM (Get Ready With Me)</h3>
+            <p class="text-sm text-mutedBrown leading-relaxed mb-4">Seamless lifestyle integration showing how your product naturally fits into an everyday Indian routine.</p>
+            <p class="text-xs text-[#8A8175] font-medium bg-warmCanvas p-2.5 rounded-xl border border-[#EAE3D9]">✓ Includes: Lifestyle Context · Natural Flow</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-surfaceSand">
+            <a href="#" onclick="openWhatsAppForService('GRWM')" class="text-xs font-bold text-darkCharcoal hover:text-sienna">Inquire on WhatsApp →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-[#EAE3D9] flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div>
+            <div class="flex justify-between items-center mb-5">
+              <span class="w-12 h-12 rounded-2xl bg-blush text-sienna flex items-center justify-center text-xl">🎯</span>
+              <span class="text-xs font-bold text-sienna bg-warmCanvas px-2.5 py-1 rounded-full border border-[#EAE3D9]">🔥 Performance</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-darkCharcoal mb-2">Testimonial-Style UGC</h3>
+            <p class="text-sm text-mutedBrown leading-relaxed mb-4">Problem-solution narratives that build immediate trust for paid Meta, Instagram, and TikTok ad sets.</p>
+            <p class="text-xs text-[#8A8175] font-medium bg-warmCanvas p-2.5 rounded-xl border border-[#EAE3D9]">✓ Includes: Pain-to-Pleasure Arc · Strong CTA</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-surfaceSand">
+            <a href="#" onclick="openWhatsAppForService('Testimonial UGC')" class="text-xs font-bold text-darkCharcoal hover:text-sienna">Inquire on WhatsApp →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-[#EAE3D9] flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div>
+            <div class="flex justify-between items-center mb-5">
+              <span class="w-12 h-12 rounded-2xl bg-blush text-sienna flex items-center justify-center text-xl">📸</span>
+              <span class="text-xs font-bold text-sienna bg-warmCanvas px-2.5 py-1 rounded-full border border-[#EAE3D9]">PDP & Ads</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-darkCharcoal mb-2">Product Photography</h3>
+            <p class="text-sm text-mutedBrown leading-relaxed mb-4">High-resolution, naturally lit creator lifestyle stills for your website, PDPs, and ad creatives.</p>
+            <p class="text-xs text-[#8A8175] font-medium bg-warmCanvas p-2.5 rounded-xl border border-[#EAE3D9]">✓ Includes: 4K High-Res Stills · Color Graded</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-surfaceSand">
+            <a href="#" onclick="openWhatsAppForService('Product Photography')" class="text-xs font-bold text-darkCharcoal hover:text-sienna">Inquire on WhatsApp →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-[#EAE3D9] flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div>
+            <div class="flex justify-between items-center mb-5">
+              <span class="w-12 h-12 rounded-2xl bg-blush text-sienna flex items-center justify-center text-xl">📱</span>
+              <span class="text-xs font-bold text-sienna bg-warmCanvas px-2.5 py-1 rounded-full border border-[#EAE3D9]">Organic</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-darkCharcoal mb-2">Reels for Brand Pages</h3>
+            <p class="text-sm text-mutedBrown leading-relaxed mb-4">Trend-aligned, high-energy short clips ready for your brand's organic Instagram and YouTube Shorts.</p>
+            <p class="text-xs text-[#8A8175] font-medium bg-warmCanvas p-2.5 rounded-xl border border-[#EAE3D9]">✓ Includes: Trend Audio · Fast Transitions</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-surfaceSand">
+            <a href="#" onclick="openWhatsAppForService('Brand Reels')" class="text-xs font-bold text-darkCharcoal hover:text-sienna">Inquire on WhatsApp →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FEATURED WORK -->
+  <section id="work" class="py-16 sm:py-24 bg-surfaceSand/40 border-t border-b border-[#EAE3D9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-sienna">Featured UGC Vault</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-darkCharcoal mt-2">
+            Reels that generated real revenue.
+          </h2>
+        </div>
+        <p class="text-sm text-mutedBrown mt-2 sm:mt-0">
+          Click any card to play the interactive simulated reel preview.
+        </p>
+      </div>
+
+      <div id="videoGrid" class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. BRANDS MARQUEE -->
+  <section id="brands" class="py-14 bg-white border-b border-[#EAE3D9] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 text-center">
+      <span class="text-xs font-bold uppercase tracking-widest text-mutedBrown">
+        Trusted by 40+ Indian D2C Brands & Agencies ✦
+      </span>
+    </div>
+    <div class="relative w-full overflow-hidden">
+      <div class="animate-marquee flex items-center gap-12 sm:gap-16 py-3 text-xl sm:text-2xl font-serif text-[#8A8175]">
+        <span class="tracking-wider">GlowLeaf</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="font-sans uppercase tracking-[0.25em] text-sm">Nykara</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="italic font-bold">DesiBrew</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="font-sans uppercase text-xs tracking-widest font-bold">Vedika Botanicals</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="font-serif">Bombay Blend</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="font-sans font-extrabold tracking-tight">UrbanMirch</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="font-serif text-sm tracking-widest">AyurPure</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="font-sans tracking-widest text-sm">SilkKala</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="italic">ChaiCulture</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="font-sans uppercase tracking-widest text-xs">Tattva Organics</span>
+        <!-- Duplicated for seamless loop -->
+        <span class="tracking-wider">GlowLeaf</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="font-sans uppercase tracking-[0.25em] text-sm">Nykara</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="italic font-bold">DesiBrew</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="font-sans uppercase text-xs tracking-widest font-bold">Vedika Botanicals</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="font-serif">Bombay Blend</span><span class="text-sm text-[#D8CEBF]">✦</span>
+        <span class="font-sans font-extrabold tracking-tight">UrbanMirch</span><span class="text-sm text-[#D8CEBF]">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. COLLABORATIONS -->
+  <section id="collaborations" class="py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-sienna">Collaborations & Results</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-darkCharcoal mt-2 mb-4">
+          Real business impact, not just vanity impressions.
+        </h2>
+        <p class="text-base text-mutedBrown">
+          Every campaign is engineered around a specific brand objective: whether it is lowering ad CPMs, boosting PDP conversion, or driving rapid launch sellouts.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-3xl p-7 sm:p-8 border border-[#EAE3D9] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between text-xs font-semibold text-mutedBrown mb-3">
+              <span class="text-sienna uppercase tracking-wider font-bold">D2C Skincare</span>
+              <span>Delivered: 3 Reels + 5 Stories</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-darkCharcoal mb-1">Nykara Botanics</h3>
+            <p class="text-sm font-semibold text-mutedBrown mb-4">Campaign: HydraDew Barrier Serum Launch</p>
+            <div class="bg-warmCanvas rounded-2xl p-4 border border-[#EAE3D9] mb-4 text-xs sm:text-sm text-darkCharcoal">
+              <span class="font-bold text-mutedBrown uppercase block text-[11px] mb-1">The Challenge</span>
+              High ad fatigue with traditional studio product ads; needed real Indian skin texture and problem-solution credibility.
+            </div>
+            <div class="bg-blush rounded-2xl p-4 border border-[#F3D1C6] mb-5">
+              <span class="font-bold text-sienna uppercase block text-[11px] mb-1">Key Performance Result</span>
+              <p class="text-sm sm:text-base font-bold text-darkCharcoal">1.2M+ organic views · 18% save rate · 4.2x ROAS on Meta ads</p>
+            </div>
+            <p class="text-xs sm:text-sm italic text-mutedBrown border-l-2 border-terracotta pl-3">"Our customer acquisition cost plummeted by 34% within 10 days of using Ananya’s UGC assets."</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-surfaceSand">
+            <a href="#" onclick="openWhatsAppForCollab('Nykara Botanics')" class="text-xs font-bold text-sienna hover:text-darkCharcoal">Discuss similar campaign on WhatsApp →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-7 sm:p-8 border border-[#EAE3D9] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between text-xs font-semibold text-mutedBrown mb-3">
+              <span class="text-sienna uppercase tracking-wider font-bold">FMCG Coffee</span>
+              <span>Delivered: 2 Reels + 1 Unboxing Haul</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-darkCharcoal mb-1">DesiBrew Artisanal</h3>
+            <p class="text-sm font-semibold text-mutedBrown mb-4">Campaign: Morning Monsoon Cold Brew Ritual</p>
+            <div class="bg-warmCanvas rounded-2xl p-4 border border-[#EAE3D9] mb-4 text-xs sm:text-sm text-darkCharcoal">
+              <span class="font-bold text-mutedBrown uppercase block text-[11px] mb-1">The Challenge</span>
+              Educate coffee drinkers on cold brew bags while keeping the aesthetic cozy and aspirational.
+            </div>
+            <div class="bg-blush rounded-2xl p-4 border border-[#F3D1C6] mb-5">
+              <span class="font-bold text-sienna uppercase block text-[11px] mb-1">Key Performance Result</span>
+              <p class="text-sm sm:text-base font-bold text-darkCharcoal">680K views · 24% comment surge · Batch sold out in 48h</p>
+            </div>
+            <p class="text-xs sm:text-sm italic text-mutedBrown border-l-2 border-terracotta pl-3">"She captured the exact mood and aroma of our brews through the screen. Unbelievable authenticity."</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-surfaceSand">
+            <a href="#" onclick="openWhatsAppForCollab('DesiBrew Artisanal')" class="text-xs font-bold text-sienna hover:text-darkCharcoal">Discuss similar campaign on WhatsApp →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. PACKAGES (SCOPE-BASED, NO FIXED AMOUNTS) -->
+  <section id="packages" class="py-16 sm:py-24 bg-surfaceSand/50 border-t border-b border-[#EAE3D9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-sienna">Collaboration Packages</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-darkCharcoal mt-2 mb-3">
+          Tailored packages for every campaign stage.
+        </h2>
+        <p class="text-sm text-mutedBrown">Because every brand's needs vary (video count, whitelisting duration, raw footage rights), pricing is customized based on your exact brief.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <div class="bg-white rounded-3xl p-8 border border-[#EAE3D9] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-display text-2xl font-bold text-darkCharcoal">Starter / Pilot UGC</h3>
+              <span class="text-xs text-mutedBrown">⏱ 3–4 Days</span>
+            </div>
+            <span class="text-[11px] font-semibold text-sienna mb-3 block">Ideal for Testing</span>
+            <p class="text-xs text-mutedBrown mb-5">Perfect for testing creator UGC in your ad account or introducing a hero product with minimal risk.</p>
+            <div class="mb-6 p-4 rounded-2xl bg-warmCanvas border border-[#EAE3D9]">
+              <div class="flex justify-between text-xs font-bold">
+                <span>Tailored Quote</span>
+                <span class="text-sienna">Custom Scope</span>
+              </div>
+              <p class="text-[11px] text-mutedBrown mt-1">Rates vary based on script concept and usage rights duration.</p>
+            </div>
+            <div class="space-y-3 mb-8 text-xs sm:text-sm text-darkCharcoal">
+              <p class="text-xs font-bold uppercase text-mutedBrown">Inclusions:</p>
+              <div>✓ 1 Dedicated 9:16 Reel (up to 45s)</div>
+              <div>✓ 1 Hook variation to test A/B retention</div>
+              <div>✓ Concept script & natural voiceover</div>
+              <div>✓ 1 round of revisions</div>
+              <div>✓ 30-day organic digital usage rights</div>
+            </div>
+          </div>
+          <div>
+            <a href="#" onclick="openWhatsAppForPackage('Starter UGC')" class="w-full py-3.5 px-4 rounded-full font-bold text-sm text-center flex items-center justify-center gap-2 bg-darkCharcoal text-white hover:bg-[#38332E] transition-all">
+              Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 border-2 border-terracotta shadow-2xl flex flex-col justify-between relative">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-terracotta text-white text-xs font-bold uppercase tracking-wider py-1 px-4 rounded-full shadow-md">
+            Most Popular for Brands
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-display text-2xl font-bold text-darkCharcoal">Growth Campaign</h3>
+              <span class="text-xs text-mutedBrown">⏱ 4–5 Days</span>
+            </div>
+            <span class="text-[11px] font-semibold text-sienna mb-3 block">Multi-Angle Testing</span>
+            <p class="text-xs text-mutedBrown mb-5">Our top-recommended package for active performance ad sets, multi-angle testing, and whitelisting.</p>
+            <div class="mb-6 p-4 rounded-2xl bg-warmCanvas border border-[#EAE3D9]">
+              <div class="flex justify-between text-xs font-bold">
+                <span>Tailored Quote</span>
+                <span class="text-sienna">Custom Scope</span>
+              </div>
+              <p class="text-[11px] text-mutedBrown mt-1">Rates vary based on video count and paid ad usage duration.</p>
+            </div>
+            <div class="space-y-3 mb-8 text-xs sm:text-sm text-darkCharcoal">
+              <p class="text-xs font-bold uppercase text-mutedBrown">Inclusions:</p>
+              <div>✓ 3 Dedicated 9:16 Reels (different angles)</div>
+              <div>✓ 2 Hook variations per video (6 hooks total)</div>
+              <div>✓ Raw footage B-roll pack included</div>
+              <div>✓ 2 rounds of revisions & text tweaks</div>
+              <div>✓ 60-day paid ads & digital usage rights</div>
+            </div>
+          </div>
+          <div>
+            <a href="#" onclick="openWhatsAppForPackage('Growth Campaign')" class="w-full py-3.5 px-4 rounded-full font-bold text-sm text-center flex items-center justify-center gap-2 bg-whatsappGreen text-white hover:bg-[#20BA5A] shadow-md transition-all">
+              Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 border border-[#EAE3D9] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-display text-2xl font-bold text-darkCharcoal">Campaign Scale</h3>
+              <span class="text-xs text-mutedBrown">⏱ Priority 48–72h</span>
+            </div>
+            <span class="text-[11px] font-semibold text-sienna mb-3 block">High-Spend Campaigns</span>
+            <p class="text-xs text-mutedBrown mb-5">Comprehensive creative suite for major product launches, category blitzes, or ongoing monthly retainers.</p>
+            <div class="mb-6 p-4 rounded-2xl bg-warmCanvas border border-[#EAE3D9]">
+              <div class="flex justify-between text-xs font-bold">
+                <span>Tailored Quote</span>
+                <span class="text-sienna">Custom Scope</span>
+              </div>
+              <p class="text-[11px] text-mutedBrown mt-1">Rates vary based on monthly volume and whitelisting access.</p>
+            </div>
+            <div class="space-y-3 mb-8 text-xs sm:text-sm text-darkCharcoal">
+              <p class="text-xs font-bold uppercase text-mutedBrown">Inclusions:</p>
+              <div>✓ 5+ High-Conversion 9:16 Reels</div>
+              <div>✓ 8 Instagram Story frames with stickers</div>
+              <div>✓ Full raw B-roll library for your editor</div>
+              <div>✓ 90-day paid ads + whitelisting rights</div>
+              <div>✓ Priority rush edit turnaround</div>
+            </div>
+          </div>
+          <div>
+            <a href="#" onclick="openWhatsAppForPackage('Campaign Scale')" class="w-full py-3.5 px-4 rounded-full font-bold text-sm text-center flex items-center justify-center gap-2 bg-darkCharcoal text-white hover:bg-[#38332E] transition-all">
+              Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CONTACT -->
+  <section id="contact" class="py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-5">
+          <span class="text-xs font-bold uppercase tracking-widest text-sienna">Get In Touch</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-darkCharcoal mt-2 mb-4">
+            Let’s create your next top-performing UGC reel.
+          </h2>
+          <p class="text-base text-mutedBrown mb-8 leading-relaxed">
+            The fastest way to reach me is on WhatsApp. I typically respond within 2 to 4 hours with available production dates and customized brief ideas.
+          </p>
+
+          <div class="bg-[#EBFBF0] border border-[#BDEEC8] rounded-3xl p-6 sm:p-7 mb-8">
+            <h3 class="font-display text-lg font-bold text-[#14532D] mb-1">WhatsApp Direct</h3>
+            <p class="text-xs text-[#166534] mb-4">Fastest response · +91 98XXXXXXXX</p>
+            <a id="contactDirectWaBtn" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-5 rounded-full bg-whatsappGreen text-white font-bold text-sm flex items-center justify-center gap-2 hover:bg-[#20BA5A]">
+              Chat on WhatsApp (+91 98XXXXXXXX)
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-3xl p-8 sm:p-10 border border-[#EAE3D9] shadow-md">
+            <h3 class="font-display text-2xl font-bold text-darkCharcoal mb-2">Send a Collaboration Enquiry</h3>
+            <p class="text-xs sm:text-sm text-mutedBrown mb-6">Filling this out instantly prepares a formatted WhatsApp message and opens the chat.</p>
+
+            <form id="enquiryForm" class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-mutedBrown mb-2">Your Name *</label>
+                  <input type="text" id="formName" required placeholder="e.g. Riya Mehta" class="w-full px-4 py-3 rounded-xl border border-[#D8CEBF] bg-warmCanvas text-sm text-darkCharcoal" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-mutedBrown mb-2">Brand Name *</label>
+                  <input type="text" id="formBrand" required placeholder="e.g. Nykara Botanics" class="w-full px-4 py-3 rounded-xl border border-[#D8CEBF] bg-warmCanvas text-sm text-darkCharcoal" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-mutedBrown mb-2">Campaign Scope Needed</label>
+                <select id="formScope" class="w-full px-4 py-3 rounded-xl border border-[#D8CEBF] bg-warmCanvas text-sm text-darkCharcoal">
+                  <option value="Single Reel Test / Pilot">Single Reel Test / Pilot</option>
+                  <option value="Growth Campaign (3–5 Reels)" selected>Growth Campaign (3–5 Reels)</option>
+                  <option value="Campaign Scale (5+ Reels + Stories)">Campaign Scale (5+ Reels + Stories)</option>
+                  <option value="Monthly Retainer Partnership">Monthly Retainer Partnership</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-mutedBrown mb-2">Campaign Brief / Product Link</label>
+                <textarea id="formMessage" rows="4" placeholder="Tell me about your product, desired timeline, or hook idea..." class="w-full px-4 py-3 rounded-xl border border-[#D8CEBF] bg-warmCanvas text-sm text-darkCharcoal"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-xl bg-whatsappGreen text-white font-bold text-base shadow-md hover:bg-[#20BA5A] transition-all flex items-center justify-center gap-2">
+                <span>Send via WhatsApp Chat</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FOOTER -->
+  <footer class="mt-auto bg-darkCharcoal text-warmCanvas py-12 border-t border-[#332D27]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#A89F94] gap-4">
+      <p>© 2026 Ananya Deshmukh. All rights reserved.</p>
+      <p>Designed for high-converting brand collaborations in India.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a id="floatingWaBtn" href="#" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-whatsappGreen text-white flex items-center justify-center shadow-2xl animate-whatsapp-pulse hover:scale-115 transition-transform" aria-label="Chat on WhatsApp">
+    <svg class="w-8 h-8 fill-white" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
+  </a>
+
+  <!-- MODAL LIGHTBOX -->
+  <div id="videoModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="relative bg-white rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl my-auto">
+      <button id="closeModalBtn" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center text-lg">✕</button>
+
+      <div class="grid grid-cols-1 md:grid-cols-12">
+        <div class="md:col-span-6 bg-black flex flex-col justify-between p-4 relative min-h-[380px]">
+          <div id="modalPlayerBg" class="absolute inset-0 bg-gradient-to-b from-[#FDF2E9] to-[#EDBB99] flex flex-col justify-between p-5">
+            <div class="flex items-center justify-between text-white text-xs z-10">
+              <span id="modalBrandPill" class="bg-black/60 px-2.5 py-1 rounded-full font-bold">Brand</span>
+              <span id="modalDuration" class="bg-black/60 px-2 py-0.5 rounded font-mono">0:34</span>
+            </div>
+
+            <div class="flex flex-col items-center justify-center z-10 text-center my-auto">
+              <div class="w-16 h-16 rounded-full bg-white text-darkCharcoal flex items-center justify-center text-2xl shadow-lg mb-2">▶</div>
+              <span class="text-xs font-semibold text-white bg-black/60 px-3 py-1 rounded-full">Reel Preview</span>
+            </div>
+
+            <div class="z-10 bg-gradient-to-t from-black/90 to-transparent -mx-5 -mb-5 p-5 text-white">
+              <p class="text-xs font-semibold text-[#FDBA74] mb-1">@ananya.creates</p>
+              <p id="modalHook" class="text-xs text-white/90 line-clamp-2 mb-3">Hook</p>
+              <div class="w-full bg-white/20 h-1 rounded-full overflow-hidden">
+                <div class="h-full bg-terracotta w-2/3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-6 p-6 sm:p-7 flex flex-col justify-between bg-white">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-sienna mb-2">
+              <span id="modalCategory">Category</span>
+            </div>
+            <h3 id="modalTitle" class="font-display text-xl font-bold text-darkCharcoal mb-3">Title</h3>
+            <div class="bg-warmCanvas rounded-xl p-3 border border-[#EAE3D9] mb-4">
+              <p class="text-xs font-bold text-mutedBrown uppercase mb-1">Tested Hook</p>
+              <p id="modalTestedHook" class="text-xs italic text-darkCharcoal">Hook</p>
+            </div>
+            <p id="modalDesc" class="text-xs text-mutedBrown leading-relaxed mb-4">Description</p>
+            <div id="modalMetrics" class="space-y-1.5 mb-6 text-xs text-darkCharcoal font-medium"></div>
+          </div>
+
+          <div class="pt-4 border-t border-surfaceSand">
+            <a id="modalBookBtn" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-4 rounded-xl bg-whatsappGreen text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 hover:bg-[#20BA5A]">
+              Request Video in This Style
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const defaultUrl = getWhatsAppUrl();
+    ['headerWaBtn', 'heroWaBtn', 'contactDirectWaBtn', 'floatingWaBtn'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.href = defaultUrl;
+    });
+
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const drawer = document.getElementById('mobileDrawer');
+    menuBtn.addEventListener('click', () => drawer.classList.toggle('hidden'));
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => drawer.classList.add('hidden'));
+    });
+
+    const FEATURED_VIDEOS = [
+      {
+        id: '1', brand: 'Nykara Botanics', category: 'Skincare',
+        title: 'HydraDew Barrier Serum 7-Day Texture Trial',
+        hook: '“Stop buying expensive serums until you know how to use this...”',
+        views: '1.2M', saves: '18.4K', duration: '0:34',
+        gradient: 'from-[#FDF2E9] to-[#EDBB99]',
+        desc: 'Tested product daily for 7 days focusing on barrier repair. Shot under natural bathroom vanity light.',
+        metrics: ['1.2M Organic Views', '18% Save Rate', '4.2x ROAS on Meta Ads']
+      },
+      {
+        id: '2', brand: 'DesiBrew Artisanal', category: 'Food & Beverage',
+        title: 'Morning Cold Brew Monsoon Ritual',
+        hook: '“Here is why I haven’t stepped into an overpriced coffee chain this month.”',
+        views: '680K', saves: '9.2K', duration: '0:28',
+        gradient: 'from-[#F5EEF8] to-[#D7BDE2]',
+        desc: 'Sensory ASMR morning brew routine. Crisp ice cracking sounds and smooth milk swirls.',
+        metrics: ['680K Reach', '24% Comment Surge', 'Batch Sold Out in 48 Hours']
+      },
+      {
+        id: '3', brand: 'GlowLeaf Organics', category: 'Haircare',
+        title: 'Root Revival Scalp Oil Honest Review',
+        hook: '“I massaged this traditional scalp oil for 3 weeks. Here are the unedited roots.”',
+        views: '940K', saves: '14.1K', duration: '0:42',
+        gradient: 'from-[#E8F8F5] to-[#A3E4D7]',
+        desc: 'Close-up demonstration of oil viscosity, scalp massage technique, and post-wash shine.',
+        metrics: ['940K Views', '22% Bio Link CTR', '+38% Repeat Cart Value']
+      },
+      {
+        id: '4', brand: 'Vedika Beauty', category: 'Makeup',
+        title: '5-Minute Monsoon Proof Tint Application',
+        hook: '“Humidity test in Mumbai traffic: does this skin tint actually hold up?”',
+        views: '810K', saves: '11.7K', duration: '0:36',
+        gradient: 'from-[#FDEDEC] to-[#F5B7B1]',
+        desc: 'Real-time wear test through Mumbai weather. Zero filter, showcasing real crease resistance.',
+        metrics: ['810K Views', '16% Share Rate', 'Top Performing Creative of Q2']
+      },
+      {
+        id: '5', brand: 'Bombay Blend', category: 'Fashion',
+        title: 'Festive Linen Kurti 3-Way Styling GRWM',
+        hook: '“One timeless ivory kurti, styled for office, festive brunch, and evening dinner.”',
+        views: '1.4M', saves: '26.3K', duration: '0:45',
+        gradient: 'from-[#FEF9E7] to-[#F9E79F]',
+        desc: 'High-tempo transitions with accessorizing tips showing versatility and fabric drape.',
+        metrics: ['1.4M Viral Views', '26K Bookmark Saves', '3.8K Direct Clicks']
+      },
+      {
+        id: '6', brand: 'UrbanMirch', category: 'Food & Beverage',
+        title: 'Millet Crunch Box Unboxing & Taste Test',
+        hook: '“Satisfying the 4 PM work craving without the guilt—listen to this crunch!”',
+        views: '520K', saves: '6.8K', duration: '0:25',
+        gradient: 'from-[#FBEEE6] to-[#EDBB99]',
+        desc: 'Snappy unboxing with crisp audio capturing taste, spice levels, and nutritional callouts.',
+        metrics: ['520K Plays', '31% Conversion Uplift', '5.1% Ad Click-Through Rate']
+      }
+    ];
+
+    const videoGrid = document.getElementById('videoGrid');
+    FEATURED_VIDEOS.forEach((vid) => {
+      const card = document.createElement('div');
+      card.className = "group relative cursor-pointer rounded-3xl overflow-hidden border border-[#EAE3D9] bg-white transition-all hover:shadow-2xl hover:-translate-y-2";
+      card.innerHTML = `
+        <div class="relative aspect-[9/16] w-full bg-gradient-to-b ${vid.gradient} flex flex-col justify-between p-4 overflow-hidden">
+          <div class="relative z-10 flex items-center justify-between">
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-black/60 text-white px-2.5 py-0.5 rounded-full">${vid.category}</span>
+            <span class="text-[11px] font-mono text-white/90 bg-black/40 px-2 py-0.5 rounded-md">${vid.duration}</span>
+          </div>
+          <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center z-10">
+            <div class="w-14 h-14 rounded-full bg-white/95 text-darkCharcoal flex items-center justify-center shadow-lg group-hover:scale-115 group-hover:bg-terracotta group-hover:text-white transition-all text-xl">▶</div>
+            <span class="text-xs font-semibold text-white mt-3 bg-black/40 px-2.5 py-0.5 rounded-full">Tap to Preview</span>
+          </div>
+          <div class="relative z-10 bg-gradient-to-t from-black/85 via-black/50 to-transparent -mx-4 -mb-4 p-4 text-white">
+            <p class="text-xs font-bold text-[#FDBA74] tracking-wide mb-1">${vid.brand}</p>
+            <h3 class="text-sm font-semibold leading-snug line-clamp-2 mb-2">${vid.title}</h3>
+            <div class="flex items-center justify-between text-[11px] text-white/80 pt-1 border-t border-white/20">
+              <span>👁 ${vid.views} views</span>
+              <span>🔖 ${vid.saves} saves</span>
+            </div>
+          </div>
+        </div>
+      `;
+      card.addEventListener('click', () => openVideoModal(vid));
+      videoGrid.appendChild(card);
+    });
+
+    const modal = document.getElementById('videoModal');
+    function openVideoModal(vid) {
+      document.getElementById('modalBrandPill').innerText = vid.brand;
+      document.getElementById('modalDuration').innerText = vid.duration;
+      document.getElementById('modalHook').innerText = vid.hook;
+      document.getElementById('modalCategory').innerText = vid.category + ' · ' + vid.brand;
+      document.getElementById('modalTitle').innerText = vid.title;
+      document.getElementById('modalTestedHook').innerText = vid.hook;
+      document.getElementById('modalDesc').innerText = vid.desc;
+      
+      const metricsContainer = document.getElementById('modalMetrics');
+      metricsContainer.innerHTML = '';
+      vid.metrics.forEach(m => {
+        metricsContainer.innerHTML += `<div class="flex items-center gap-1.5"><span class="text-whatsappGreen font-bold">✓</span> ${m}</div>`;
+      });
+
+      document.getElementById('modalBookBtn').href = getWhatsAppUrl(`Hi Ananya, I watched your "${vid.title}" reel for ${vid.brand}. We would like a UGC video in this exact format!`);
+      modal.classList.remove('hidden');
+    }
+
+    document.getElementById('closeModalBtn').addEventListener('click', () => modal.classList.add('hidden'));
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.classList.add('hidden');
+    });
+
+    function openWhatsAppForPackage(pkgName) {
+      window.open(getWhatsAppUrl(`Hi Ananya, I'd like to discuss the "${pkgName}" tier for our brand. Could you share your tailored rate card?`), '_blank');
+    }
+    function openWhatsAppForService(serviceName) {
+      window.open(getWhatsAppUrl(`Hi Ananya, I am interested in discussing your "${serviceName}" service for my brand.`), '_blank');
+    }
+    function openWhatsAppForCollab(brand) {
+      window.open(getWhatsAppUrl(`Hi Ananya, I loved your campaign for ${brand}. We would like to explore a similar UGC strategy for our brand.`), '_blank');
+    }
+
+    document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('formName').value;
+      const brand = document.getElementById('formBrand').value;
+      const scope = document.getElementById('formScope').value;
+      const message = document.getElementById('formMessage').value;
+
+      const formatted = `Hi Ananya, I'm ${name} from ${brand}. We are interested in a UGC collaboration!\n\nScope: ${scope}\nDetails: ${message || 'Looking forward to collaborating with you.'}`;
+      window.open(getWhatsAppUrl(formatted), '_blank');
+    });
+  </script>
+</body>
+</html>
